@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CartelBoro 2026</title>
+
+<style>
+:root{
+  --red:#c00000;
+  --redGlow:#ff2a2a;
+  --bg:#050505;
+  --card:#0e0e0e;
+  --muted:#bdbdbd;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Inter,Segoe UI,Arial;
+  background:radial-gradient(1200px 500px at 50% -10%, #300, #000);
+  color:#fff;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:22px 30px;
+  background:linear-gradient(90deg,#200,#800,#200);
+}
+.logo{
+  font-size:28px;
+  font-weight:900;
+  letter-spacing:3px;
+}
+.menu a{
+  color:#ffb3b3;
+  text-decoration:none;
+  margin-left:22px;
+  font-weight:700;
+}
+.menu a:hover{color:#fff}
+
+/* HERO */
+.hero{
+  padding:120px 20px;
+  text-align:center;
+}
+.hero h1{
+  font-size:62px;
+  color:var(--redGlow);
+  text-shadow:0 0 40px rgba(255,0,0,.6);
+  animation:fadeUp 1s ease forwards;
+}
+.hero p{
+  max-width:700px;
+  margin:18px auto 34px;
+  color:#ddd;
+  font-size:18px;
+  animation:fadeUp 1s ease .2s forwards;
+  opacity:0;
+}
+.hero .actions{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  animation:fadeUp 1s ease .4s forwards;
+  opacity:0;
+}
+
+.btn{
+  padding:16px 34px;
+  border-radius:40px;
+  border:1px solid #500;
+  background:linear-gradient(180deg,var(--red),#700);
+  color:#fff;
+  font-weight:800;
+  text-decoration:none;
+  box-shadow:0 0 30px rgba(255,0,0,.5);
+  transition:.25s;
+}
+.btn.alt{background:#0b0b0b}
+.btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 50px rgba(255,0,0,.9);
+}
+
+/* SECTIONS */
+.section{
+  max-width:1200px;
+  margin:100px auto;
+  padding:0 20px;
+}
+.section h2{
+  text-align:center;
+  color:var(--redGlow);
+  margin-bottom:50px;
+  font-size:36px;
+}
+
+/* FEATURES */
+.features{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:22px;
+}
+.feature{
+  background:linear-gradient(180deg,var(--card),#050505);
+  border:1px solid #300;
+  border-radius:18px;
+  padding:28px;
+  text-align:center;
+  transition:.3s;
+}
+.feature:hover{
+  transform:translateY(-8px);
+  box-shadow:0 20px 60px rgba(255,0,0,.45);
+}
+.feature h3{
+  color:#ff9a9a;
+  margin-bottom:10px;
+}
+
+/* TRUST */
+.trust{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:20px;
+}
+.trust div{
+  background:#0c0c0c;
+  border:1px solid #300;
+  border-radius:16px;
+  padding:24px;
+  text-align:center;
+}
+.trust strong{
+  font-size:34px;
+  color:var(--redGlow);
+}
+
+/* TERMS */
+.terms{
+  background:linear-gradient(135deg,#120000,#000);
+  border:1px solid #400;
+  border-radius:24px;
+  padding:50px 30px;
+}
+.terms ul{
+  max-width:800px;
+  margin:auto;
+  list-style:none;
+}
+.terms li{
+  margin-bottom:18px;
+  padding-left:28px;
+  position:relative;
+  color:#ddd;
+}
+.terms li::before{
+  content:"⚠";
+  position:absolute;
+  left:0;
+  color:var(--redGlow);
+}
+
+/* FOOTER */
+footer{
+  margin-top:120px;
+  background:#000;
+  padding:30px;
+  text-align:center;
+  color:#888;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .features{grid-template-columns:repeat(2,1fr)}
+  .trust{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .features,.trust{grid-template-columns:1fr}
+  .hero h1{font-size:44px}
+}
+
+/* ANIM */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:translateY(0)}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">CartelBoro 2026</div>
+  <div class="menu">
+    <a href="index.html">Начало</a>
+    <a href="photos.html">Нашите продукти</a>
+    <a href="delivery.html">Доставка</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Cartel Market</h1>
+  <p>24/7, Бърза обработка, Директна комуникация.</p>
+  <div class="actions">
+    <a class="btn" href="prices.html">Цени</a>
+    <a class="btn alt" href="https://t.me/CartelBoroOrders">Telegram</a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Защо CartelBoro</h2>
+  <div class="features">
+    <div class="feature"><h3>Качество</h3><p>Висок стандарт и внимание към детайла</p></div>
+    <div class="feature"><h3>Дискретност</h3><p>Без лични срещи и излишни въпроси</p></div>
+    <div class="feature"><h3>Бързина</h3><p>Обработка до 12 часа</p></div>
+    <div class="feature"><h3>Поддръжка</h3><p>24/7 Комуникация</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Информация</h2>
+  <div class="trust">
+    <div><strong>5000+</strong><br>Клиенти</div>
+    <div><strong>24–48ч</strong><br>Доставка</div>
+    <div><strong>100%</strong><br>Дискретно</div>
+    <div><strong>Револют & Крипто</strong><br>Плащане</div>
+    <div><strong>1:1</strong><br>Качество</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Условия</h2>
+  <div class="terms">
+    <ul>
+      <li>ПЛАЩАНЕТО Е САМО И ЕДИНСТВЕНО В РЕВОЛЮТ & КРИПТО!</li>
+      <li>Без лични срещи или директен контакт</li>
+      <li>Локация за вземане се изпраща чрез Google Maps координати</li>
+      <li>След потвърждение поръчката не подлежи на отказ</li>
+      <li>Пълна конфиденциалност за всеки клиент</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  © 2026 CartelBoro • All Rights Reserved
+</footer>
+<script>
+  function setCur(c,el){
+    document.getElementById('bgn').style.display = c==='BGN'?'grid':'none';
+    document.getElementById('eur').style.display = c==='EUR'?'grid':'none';
+    document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  function openModal(){document.getElementById('modal').style.display='flex'}
+  function closeModal(){document.getElementById('modal').style.display='none'}
+
+  /* Scroll reveal */
+  const faders = document.querySelectorAll('.hero h1, .hero p, .cta, .section, .tg');
+  const appearOptions = {threshold:0.2};
+  const appearOnScroll = new IntersectionObserver(function(entries,observer){
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){entry.target.style.opacity='1';entry.target.style.transform='translateY(0)';observer.unobserve(entry.target);}
+    });
+  },appearOptions);
+  faders.forEach(fader=>appearOnScroll.observe(fader));
+
+  /* Animated clients counter */
+  let clients = 0;
+  const targetClients = 5000;
+  const clientsEl = document.getElementById('clients');
+  function countClients(){
+    if(clients < targetClients){
+      clients += Math.ceil(targetClients/100);
+      if(clients > targetClients) clients=targetClients;
+      clientsEl.textContent = clients+'+';
+      requestAnimationFrame(countClients);
+    }
+  }
+  const statSection = document.querySelector('.stats');
+  const statObserver = new IntersectionObserver(function(entries,observer){
+    entries.forEach(entry=>{if(entry.isIntersecting){countClients();observer.unobserve(entry.target);}});
+  }, {threshold:0.5});
+  statObserver.observe(statSection);
+</body>
+</html>
