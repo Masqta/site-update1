@@ -61,12 +61,14 @@ nav{
   animation:fadeUp 1s ease .2s forwards;
   opacity:0;
 }
-.hero .actions{
-  display:flex;
-  justify-content:center;
-  gap:18px;
-  animation:fadeUp 1s ease .4s forwards;
-  opacity:0;
+.hero .actions {
+  display: flex;
+  flex-direction: column; /* вертикално подреждане */
+  align-items: center;    /* центрира бутоните по хоризонтала */
+  gap: 16px;              /* разстояние между бутоните */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease .4s forwards;
 }
 
 .btn{
@@ -291,6 +293,7 @@ footer{
   statObserver.observe(statSection);
 </body>
 </html>
+
 
 
 
